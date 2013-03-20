@@ -1,6 +1,6 @@
 <h1>Edit Dcb Account</h1>
-<%= link_to "Back", dcb_accounts_path %>
+<div class="btn"><%= link_to "Back", dcb_accounts_path %></div>
 <hr>
-<div class="well">
+<div class="well well-large">
   <%= render :partial => "form", :locals => { :dcb_account => @dcb_account } %>
 </div>
