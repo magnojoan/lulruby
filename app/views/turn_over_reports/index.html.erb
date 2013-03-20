@@ -1,0 +1,35 @@
+<h1>My Turn Over Reports</h1>
+<%= link_to "Add Turn Over Report", new_turn_over_report_path %>
+<hr>
+<div class="well">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>To</th>
+        <th>Payer</th>
+        <th>Date</th>
+        <th>Total Amount</th>
+        <th>Check Number</th>
+        <th>Issuing Bank</th>
+        <th>Dcb Account</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @turn_over_reports.each do |g| %>
+      <tr>
+        <td><%= g.to %></td>
+        <td><%= g.payer %></td>
+        <td><%= g.date %> </td>
+        <td><%= g.total_amount %> </td>
+        <td><%= g.check_number %> </td>
+        <td><%= g.issuing_bank %> </td>
+        <td><%= g.dcb_account_id %> </td>
+        <td>
+          <%= link_to "Edit", edit_turn_over_report_path(g.id) %> |
+          <%= link_to "Delete", turn_over_report_path(g.id), :method => :delete, :confirm => "Are you sure?" %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

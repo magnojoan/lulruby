@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130319054749) do
+ActiveRecord::Schema.define(:version => 20130320164227) do
 
   create_table "dcb_accounts", :force => true do |t|
     t.string   "account_name"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20130319054749) do
     t.decimal  "check_amount",   :precision => 10, :scale => 0
     t.string   "check_number"
     t.string   "issuing_bank"
-    t.integer  "db_account_id"
+    t.integer  "dcb_account_id"
     t.datetime "created_at",                                    :null => false
     t.datetime "updated_at",                                    :null => false
   end

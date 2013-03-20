@@ -1,0 +1,28 @@
+<h1>My Dcb Accounts</h1>
+<%= link_to "Add Dcb Account", new_dcb_account_path %>
+<hr>
+<div class="well">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Account Name</th>
+        <th>Account Number</th>
+        <th>Amount</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @dcb_accounts.each do |g| %>
+      <tr>
+        <td><%= g.account_name %></td>
+        <td><%= g.account_number %></td>
+        <td><%= g.amount %> </td>
+        <td>
+          <%= link_to "Edit", edit_dcb_account_path(g.id) %> |
+          <%= link_to "Delete", dcb_account_path(g.id), :method => :delete, :confirm => "Are you sure?" %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

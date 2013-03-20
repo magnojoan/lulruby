@@ -1,0 +1,6 @@
+<h1>Edit Turn Over Report</h1>
+<%= link_to "Back", turn_over_reports_path %>
+<hr>
+<div class="well">
+  <%= render :partial => "form", :locals => { :turn_over_report => @turn_over_report } %>
+</div>
