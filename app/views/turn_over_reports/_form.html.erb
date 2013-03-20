@@ -1,0 +1,19 @@
+<%= simple_form_for(turn_over_report) do |f| %>
+<%= f.input :to %>
+<%= f.input :date %>
+<%= f.input :payer %>
+<%= f.input :total_amount %>
+<%= f.input :request_by %>
+<%= f.input :contact_number %>
+<%= f.input :received_by %>
+<%= f.input :unit %>
+<%= f.input :is_cash %>
+<%= f.input :is_check %>
+<%= f.input :date_received %>
+<%= f.input :cash_amount %>
+<%= f.input :check_amount %>
+<%= f.input :check_number %>
+<%= f.input :issuing_bank %>
+<%= f.association :dcb_account %>
+<%= f.submit "Submit", :class => "btn btn-primary" %>
+<% end %>

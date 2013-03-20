@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  to: MyString
+  date: 2013-03-19
+  payer: MyString
+  total_amount: 9.99
+  request_by: MyString
+  contact_number: MyString
+  received_by: MyString
+  unit: MyString
+  is_cash: false
+  is_check: false
+  date_received: 2013-03-19
+  cash_amount: 9.99
+  check_amount: 9.99
+  check_number: MyString
+  issuing_bank: MyString
+  db_account_id: 1
+
+two:
+  to: MyString
+  date: 2013-03-19
+  payer: MyString
+  total_amount: 9.99
+  request_by: MyString
+  contact_number: MyString
+  received_by: MyString
+  unit: MyString
+  is_cash: false
+  is_check: false
+  date_received: 2013-03-19
+  cash_amount: 9.99
+  check_amount: 9.99
+  check_number: MyString
+  issuing_bank: MyString
+  db_account_id: 1
